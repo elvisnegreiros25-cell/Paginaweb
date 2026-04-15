@@ -42,3 +42,4 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
 .main-nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 16px 0; background: rgba(15, 15, 26, 0.75); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(108, 92, 231, 0.1); }
 .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 30px; display: flex; align-items: center; justify-content: space-between; }
 .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: 1px; color: var(--text-primary); display: flex; align-items: center; gap: 10px; }
+.logo i, .logo span { background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
