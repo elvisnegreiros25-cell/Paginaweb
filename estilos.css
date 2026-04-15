@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* ============================================
    COMMIT 1: Reset, Variables & Tipografía Base
    ============================================ */
@@ -388,6 +389,9 @@ section {
         padding: 60px 5%;
     }
 }
+=======
+/* --- CONFIGURACIÓN GENERAL --- */
+>>>>>>> origin/master
 :root {
     --primary: #2563eb;
     --secondary: #06b6d4;
@@ -395,15 +399,30 @@ section {
     --light: #f8fafc;
     --text: #334155;
     --white: #ffffff;
+<<<<<<< HEAD
     --transition: all 0.3s ease;
 }
 
 
 
+=======
+
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.05);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+
+    --transition: all 0.25s ease;
+}
+
+>>>>>>> origin/master
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
+    transition: var(--transition);
+>>>>>>> origin/master
 }
 
 body {
@@ -417,37 +436,59 @@ body {
 ul { list-style: none; }
 a { text-decoration: none; color: inherit; }
 
+<<<<<<< HEAD
 /* --- NAVEGACIÓN --- */
 .main-nav {
     background: rgba(255, 255, 255, 0.95);
+=======
+/* --- NAV --- */
+.main-nav {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.8);
+>>>>>>> origin/master
     padding: 1rem 5%;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+<<<<<<< HEAD
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+=======
+    box-shadow: var(--shadow-sm);
+>>>>>>> origin/master
 }
 
 .nav-container {
     display: flex;
+<<<<<<< HEAD
     width: 100%;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+=======
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+>>>>>>> origin/master
 }
 
 .logo {
     font-weight: 800;
     font-size: 1.5rem;
+<<<<<<< HEAD
     color: var(--dark);
+=======
+>>>>>>> origin/master
 }
 
 .logo span { color: var(--primary); }
 
+<<<<<<< HEAD
 .menu { display: flex; align-items: center; gap: 2rem; }
 
 .menu a:hover { color: var(--primary); }
@@ -466,11 +507,45 @@ a { text-decoration: none; color: inherit; }
 
 .cart-icon { position: relative; }
 >>>>>>> origin/master
+=======
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a:hover {
+    color: var(--primary);
+}
+
+.btn-contact {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-icons a:hover {
+    transform: scale(1.15);
+}
+
+.cart-icon { position: relative; }
+>>>>>>> origin/master
 
 .cart-count {
     position: absolute;
     top: -8px;
     right: -10px;
+<<<<<<< HEAD
 <<<<<<< HEAD
     background: var(--accent);
     color: #fff;
@@ -547,6 +622,8 @@ a { text-decoration: none; color: inherit; }
     margin-bottom: 24px;
     border: 1px solid rgba(108, 92, 231, 0.25);
 =======
+=======
+>>>>>>> origin/master
     background: var(--secondary);
     color: white;
     font-size: 0.7rem;
@@ -554,21 +631,32 @@ a { text-decoration: none; color: inherit; }
     border-radius: 50%;
 }
 
+<<<<<<< HEAD
 /* --- HERO SECTION --- */
 .hero-section {
     height: 100vh;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+=======
+/* --- HERO --- */
+.hero-section {
+    height: 100vh;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+>>>>>>> origin/master
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
     padding: 0 10%;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
+<<<<<<< HEAD
 <<<<<<< HEAD
     font-weight: 800;
     line-height: 1.15;
@@ -587,6 +675,11 @@ a { text-decoration: none; color: inherit; }
 =======
     margin: 1rem 0;
     line-height: 1.2;
+=======
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 1rem 0;
+>>>>>>> origin/master
 }
 
 .tagline {
@@ -596,6 +689,7 @@ a { text-decoration: none; color: inherit; }
     font-weight: 600;
 }
 
+<<<<<<< HEAD
 .hero-btns { margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; }
 
 .btn-primary, .btn-secondary {
@@ -611,12 +705,52 @@ a { text-decoration: none; color: inherit; }
 .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37,99,235,0.3); }
 
 /* --- STATS BAR --- */
+=======
+.hero-btns {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* BOTONES */
+.btn-primary, .btn-secondary {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(37,99,235,0.45);
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: var(--primary);
+}
+
+/* --- STATS --- */
+>>>>>>> origin/master
 .stats-bar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     background: var(--white);
     padding: 3rem 10%;
     margin-top: -50px;
+<<<<<<< HEAD
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border-radius: 15px;
     max-width: 1100px;
@@ -808,6 +942,34 @@ a { text-decoration: none; color: inherit; }
 .features { padding: 5rem 10%; background: var(--light); }
 
 .section-title { text-align: center; margin-bottom: 3rem; }
+=======
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+/* --- FEATURES --- */
+.features {
+    padding: 5rem 10%;
+    background: var(--light);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+>>>>>>> origin/master
 .underline {
     width: 60px;
     height: 4px;
@@ -825,8 +987,13 @@ a { text-decoration: none; color: inherit; }
     background: white;
     padding: 3rem 2rem;
     border-radius: 12px;
+<<<<<<< HEAD
     transition: var(--transition);
     text-align: center;
+=======
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+>>>>>>> origin/master
 }
 
 .feature-card i {
@@ -835,15 +1002,28 @@ a { text-decoration: none; color: inherit; }
     margin-bottom: 1.5rem;
 }
 
+<<<<<<< HEAD
 .feature-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
 
 /* --- CATALOG --- */
 .catalog { padding: 5rem 10%; }
 >>>>>>> origin/master
+=======
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+/* --- PRODUCTOS --- */
+.catalog {
+    padding: 5rem 10%;
+}
+>>>>>>> origin/master
 
 .product-filters {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
     gap: 12px;
     margin-bottom: 50px;
@@ -918,6 +1098,8 @@ a { text-decoration: none; color: inherit; }
     background: rgba(15, 15, 26, 0.6);
     backdrop-filter: blur(4px);
 =======
+=======
+>>>>>>> origin/master
     gap: 1rem;
     margin-bottom: 3rem;
 }
@@ -925,12 +1107,22 @@ a { text-decoration: none; color: inherit; }
 .filter-btn {
     padding: 0.5rem 1.5rem;
     border: 1px solid #ddd;
+<<<<<<< HEAD
     background: none;
+=======
+>>>>>>> origin/master
     border-radius: 20px;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+=======
+.filter-btn.active {
+    background: var(--primary);
+    color: white;
+}
+>>>>>>> origin/master
 
 .products-container {
     display: grid;
@@ -941,6 +1133,7 @@ a { text-decoration: none; color: inherit; }
 .product-item {
     border-radius: 12px;
     overflow: hidden;
+<<<<<<< HEAD
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
@@ -958,6 +1151,39 @@ a { text-decoration: none; color: inherit; }
     opacity: 0;
 <<<<<<< HEAD
     transition: var(--transition-base);
+=======
+    box-shadow: var(--shadow-sm);
+}
+
+.product-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.product-img {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-item:hover img {
+    transform: scale(1.08);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(37,99,235,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+>>>>>>> origin/master
 }
 
 .product-item:hover .overlay {
@@ -965,6 +1191,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .add-to-cart {
+<<<<<<< HEAD
     padding: 12px 30px;
     background: var(--gradient-accent);
     color: #fff;
@@ -1109,10 +1336,43 @@ a { text-decoration: none; color: inherit; }
 .contact-section { padding: 5rem 10%; background: var(--dark); color: white; }
 
 .contact-container {
+=======
+    padding: 0.8rem 1.5rem;
+    background: white;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.category {
+    color: var(--secondary);
+    font-size: 0.8rem;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+/* --- CONTACTO --- */
+.contact-section {
+    padding: 5rem 10%;
+    background: var(--dark);
+    color: white;
+}
+
+.contact-container {
+>>>>>>> origin/master
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     max-width: 1200px;
+<<<<<<< HEAD
     margin: 0 auto;
 }
 
@@ -1125,10 +1385,20 @@ a { text-decoration: none; color: inherit; }
     flex-direction: column;
 <<<<<<< HEAD
     gap: 18px;
+=======
+    margin: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+>>>>>>> origin/master
 }
 
 .contact-form input,
 .contact-form textarea {
+<<<<<<< HEAD
     width: 100%;
     padding: 16px 20px;
     background: var(--dark-card);
@@ -1424,6 +1694,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .contact-form input, .contact-form textarea {
+=======
+>>>>>>> origin/master
     padding: 1rem;
     border-radius: 8px;
     border: none;
@@ -1431,24 +1703,51 @@ a { text-decoration: none; color: inherit; }
     color: white;
 }
 
+<<<<<<< HEAD
 .btn-submit {
     background: var(--secondary);
     color: white;
     padding: 1rem;
     border: none;
     border-radius: 8px;
+=======
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--secondary);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+>>>>>>> origin/master
     font-weight: 700;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* --- FOOTER --- */
 .footer { background: #070b14; color: #94a3b8; padding: 4rem 10% 2rem; }
+=======
+.btn-submit:hover {
+    transform: translateY(-2px);
+}
+
+/* --- FOOTER --- */
+.footer {
+    background: #070b14;
+    color: #94a3b8;
+    padding: 4rem 10% 2rem;
+}
+>>>>>>> origin/master
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+<<<<<<< HEAD
     padding-bottom: 3rem;
 }
 
@@ -1457,19 +1756,59 @@ a { text-decoration: none; color: inherit; }
 .social-links { display: flex; gap: 1rem; margin-top: 1rem; }
 .social-links a { font-size: 1.5rem; transition: var(--transition); }
 .social-links a:hover { color: var(--primary); }
+=======
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+}
+>>>>>>> origin/master
 
 .footer-bottom {
     text-align: center;
     border-top: 1px solid #1e293b;
     padding-top: 2rem;
+<<<<<<< HEAD
     font-size: 0.9rem;
+=======
+>>>>>>> origin/master
 }
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .menu { display: none; }
+<<<<<<< HEAD
     .hero-content h1 { font-size: 2.2rem; }
     .contact-container { grid-template-columns: 1fr; }
     .stats-bar { grid-template-columns: 1fr 1fr; }
+}
+>>>>>>> origin/master
+=======
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-bar {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 >>>>>>> origin/master
