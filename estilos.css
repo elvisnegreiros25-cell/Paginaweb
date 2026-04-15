@@ -45,3 +45,4 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
 .logo i, .logo span { background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .menu { display: flex; align-items: center; gap: 8px; }
 .menu li a { padding: 8px 18px; border-radius: var(--radius-full); font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); transition: var(--transition-fast); }
+.menu li a:hover { color: var(--text-primary); background: rgba(108, 92, 231, 0.12); }
