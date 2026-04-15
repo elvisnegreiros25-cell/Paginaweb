@@ -67,3 +67,4 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
 .feature-card { background: var(--gradient-card); border: 1px solid rgba(108, 92, 231, 0.12); border-radius: var(--radius-lg); padding: 40px 30px; text-align: center; transition: var(--transition-base); }
 .catalog { padding: 100px 30px; background: var(--dark-card); }
 .products-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+.product-item { background: var(--dark-surface); border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(108, 92, 231, 0.1); transition: var(--transition-base); }
