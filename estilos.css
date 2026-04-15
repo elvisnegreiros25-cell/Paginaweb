@@ -1,4 +1,181 @@
 /* --- CONFIGURACIÓN GENERAL --- */
+
+
+/* =============================================
+   VARIABLES Y BASE (Responsabilidad: ELVIS)
+   ============================================= */
+:root {
+    --azul-noche: #0a192f;
+    --azul-claro: #112240;
+    --dorado: #f1c40f; /* Dorado vibrante */
+    --dorado-hover: #d4ac0d;
+    --blanco: #e6f1ff;
+    --gris-texto: #8892b0;
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+    line-height: 1.6;
+}
+
+/* =============================================
+   ESTILOS DE SECCIÓN GENERALES
+   ============================================= */
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--dorado);
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background: var(--dorado);
+    margin: 10px auto;
+}
+
+/* =============================================
+   FORMULARIO DE REGISTRO (Nueva Sección)
+   ============================================= */
+.registration-section {
+    background-color: var(--azul-claro);
+}
+
+.form-container-client {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--azul-noche);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(241, 196, 15, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.client-form .form-group-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    margin-bottom: 8px;
+    color: var(--dorado);
+    font-weight: 600;
+}
+
+.input-box input, 
+.input-box textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--gris-texto);
+    background: transparent;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: var(--dorado);
+    box-shadow: 0 0 8px rgba(241, 196, 15, 0.3);
+}
+
+.full-width {
+    margin-bottom: 25px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* =============================================
+   BOTONES (Globales)
+   ============================================= */
+.btn-primary {
+    background-color: var(--dorado);
+    color: var(--azul-noche);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--dorado-hover);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--dorado);
+    padding: 12px 30px;
+    border: 2px solid var(--dorado);
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(241, 196, 15, 0.1);
+}
+
+
+.footer {
+    background-color: #020c1b;
+    padding: 50px 10% 20px;
+    border-top: 1px solid var(--dorado);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-about span {
+    color: var(--dorado);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .client-form .form-group-row {
+        flex-direction: column;
+    }
+    
+    section {
+        padding: 60px 5%;
+    }
+}
 :root {
     --primary: #2563eb;
     --secondary: #06b6d4;
@@ -8,6 +185,8 @@
     --white: #ffffff;
     --transition: all 0.3s ease;
 }
+
+
 
 * {
     margin: 0;
