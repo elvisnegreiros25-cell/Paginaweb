@@ -58,3 +58,4 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
 .hero-content h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 20px; background: linear-gradient(135deg, #f0f0f5 0%, #a29bfe 50%, #00cec9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .hero-content p { font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 40px; max-width: 550px; margin-left: auto; margin-right: auto; }
 .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 36px; background: var(--gradient-accent); color: #fff; font-weight: 700; border-radius: var(--radius-full); box-shadow: 0 8px 30px rgba(108, 92, 231, 0.35); }
