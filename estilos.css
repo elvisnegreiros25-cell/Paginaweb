@@ -70,3 +70,5 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
 .product-item { background: var(--dark-surface); border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(108, 92, 231, 0.1); transition: var(--transition-base); }
 .contact-section { padding: 100px 30px; background: var(--dark); }
 .contact-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.footer { background: var(--dark-card); padding: 60px 30px 40px; border-top: 1px solid rgba(108, 92, 231, 0.1); }
+.footer-bottom { text-align: center; padding-top: 40px; color: var(--text-muted); }
