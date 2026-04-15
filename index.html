@@ -1,12 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enterprise Sales | Gestión y Comercio</title>
+    <meta name="description" content="Plataforma profesional de ventas y gestión de inventario.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>lpokjhgfdssdftgyhuiopoijgf</h1>
-    
+    <h1> e4hi3gb</h1>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-microchip"></i> <span>TECH</span>SALES 
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Catálogo</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto" class="btn-contact">Contáctanos</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <div class="hero-content">
+            <span class="tagline">Tecnología en tus manos</span>
+            <h1>Potencia tu negocio con nuestra plataforma de ventas</h1>
+            <p>Sincronización en tiempo real, gestión de inventarios y facturación electrónica en un solo lugar.</p>
+            <div class="hero-btns">
+                <a href="#productos" class="btn-primary">Ver Catálogo</a>
+                <a href="#servicios" class="btn-secondary">Saber más</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats-bar">
+        <div class="stat-item">
+            <h3>+10k</h3>
+            <p>Ventas Realizadas</p>
+        </div>
+        <div class="stat-item">
+            <h3>99.9%</h3>
+            <p>Uptime de Servidor</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Soporte Técnico</p>
+        </div>
+        <div class="stat-item">
+            <h3>150+</h3>
+            <p>Marcas Aliadas</p> 
+        </div>
+    </section>
+
+    <section id="servicios" class="features">
+        <div class="section-title">
+            <h2>Nuestras Soluciones</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-box-open"></i>
+                <h3>Gestión de Stock</h3>
+                <p>Control total de entradas y salidas de mercancía con alertas de bajo inventario.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Reportes Avanzados</h3>
+                <p>Analítica detallada de ventas diarias, mensuales y rendimiento por vendedor.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Seguridad Total</h3>
+                <p>Cifrado de datos de extremo a extremo para proteger tus transacciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="catalog">
+        <div class="section-title">
+            <h2>Catálogo Destacado</h2>
+            <p>Explora nuestras últimas novedades tecnológicas</p>
+        </div>
+        
+        <div class="product-filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Hardware</button>
+            <button class="filter-btn">Software</button>
+            <button class="filter-btn">Accesorios</button>
+        </div>
+
+        <div class="products-container">
+            <article class="product-item">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Laptop">
+                    <div class="overlay">
+                        <button class="add-to-cart">Añadir</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Hardware</span>
+                    <h3>Laptop Pro Max 2026</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price">S/ 4,500.00</p>
+                </div>
+            </article>
+
+            </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>¿Listo para empezar?</h2>
+                <p>Déjanos tus datos y un asesor se pondrá en contacto contigo en menos de 24 horas.</p>
+                <ul class="contact-details">
+                    <li><i class="fas fa-envelope"></i> ventas@empresa.com</li>
+                    <li><i class="fas fa-phone"></i> +51 987 654 321</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Trujillo, Perú</li>
+                </ul>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="¿En qué podemos ayudarte?" rows="5"></textarea>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>TECH<span>SALES</span></h3>
+                <p>Líderes en soluciones tecnológicas para la gestión empresarial moderna.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Todos los derechos reservados | Diseñado por Tu Nombre</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
+
+
+
