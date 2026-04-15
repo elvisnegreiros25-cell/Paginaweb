@@ -33,3 +33,5 @@ body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: v
 a { text-decoration: none; color: inherit; transition: var(--transition-fast); }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
+button { font-family: inherit; cursor: pointer; border: none; outline: none; }
+h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
