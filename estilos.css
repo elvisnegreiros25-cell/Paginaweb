@@ -52,3 +52,4 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
 .cart-count { position: absolute; top: -8px; right: -10px; background: var(--accent); color: #fff; font-size: 0.65rem; font-weight: 700; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .hero-section { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--gradient-hero); position: relative; padding: 120px 30px 80px; overflow: hidden; }
 .hero-section::before { content: ''; position: absolute; top: -50%; right: -20%; width: 700px; height: 700px; background: radial-gradient(circle, rgba(108, 92, 231, 0.15) 0%, transparent 70%); border-radius: 50%; animation: float 8s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-30px) rotate(5deg); } }
