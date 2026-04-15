@@ -5,10 +5,10 @@
 :root {
     --azul-noche: #0a192f;
     --azul-claro: #112240;
-    --dorado: #4a1e83; /* Dorado vibrante */
+    --dorado: #ffffff; /* Dorado vibrante */
     --dorado-hover: #0b07db;
-    --blanco: #e6f1ff;
-    --gris-texto: #8892b0;
+    --blanco: #04ff43;
+    --gris-texto: #00ffd5;
     --fuente-principal: 'Inter', sans-serif;
 }
 
