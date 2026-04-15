@@ -55,3 +55,4 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; }
 @keyframes float { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-30px) rotate(5deg); } }
 .hero-content { max-width: 750px; text-align: center; position: relative; z-index: 2; }
 .tagline { display: inline-block; background: rgba(108, 92, 231, 0.15); color: var(--primary-light); padding: 8px 20px; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 24px; border: 1px solid rgba(108, 92, 231, 0.25); }
+.hero-content h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 20px; background: linear-gradient(135deg, #f0f0f5 0%, #a29bfe 50%, #00cec9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
