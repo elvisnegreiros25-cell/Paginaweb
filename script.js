@@ -2,3 +2,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('TECHSALES V2.0 Initialized');
     const nav = document.querySelector('.main-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) { nav.classList.add('nav-scrolled'); }
