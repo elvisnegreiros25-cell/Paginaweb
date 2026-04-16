@@ -39,3 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.style.cursor = 'pointer';
         btn.addEventListener('click', () => {
             count++; cartBadge.textContent = count;
+            cartBadge.style.transform = 'scale(1.2)';
