@@ -13,3 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('Navigating to section...'); }
         });
     });
+    /* --- Hector: Logic Filter --- */
+    const filterBtns = document.querySelectorAll('.filter-btn');
