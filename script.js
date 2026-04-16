@@ -1,49 +1,13 @@
-﻿// logica v2.101
-// logica v2.102
-// logica v2.103
-// logica v2.104
-// logica v2.105
-// logica v2.106
-// logica v2.107
-// logica v2.108
-// logica v2.109
-// logica v2.110
-// logica v2.111
-// logica v2.112
-// logica v2.113
-// logica v2.114
-// logica v2.115
-// logica v2.116
-// logica v2.117
-// logica v2.118
-// logica v2.119
-// logica v2.120
-// logica v2.121
-// logica v2.122
-// logica v2.123
-// logica v2.124
-// logica v2.125
-// logica v2.126
-// logica v2.127
-// logica v2.128
-// logica v2.129
-// logica v2.130
-// logica v2.131
-// logica v2.132
-// logica v2.133
-// logica v2.134
-// logica v2.135
-// logica v2.136
-// logica v2.137
-// logica v2.138
-// logica v2.139
-// logica v2.140
-// logica v2.141
-// logica v2.142
-// logica v2.143
-// logica v2.144
-// logica v2.145
-// logica v2.146
-// logica v2.147
-// logica v2.148
-// logica v2.149
+document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('.main-nav');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+    window.addEventListener('scroll', () => { if (window.scrollY > 100) nav.classList.add('nav-scrolled'); else nav.classList.remove('nav-scrolled'); });
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active')); btn.classList.add('active');
+            const cat = btn.getAttribute('data-category');
+            productCards.forEach(card => { if (cat === 'todos' || card.getAttribute('data-category') === cat) card.style.display = 'block'; else card.style.display = 'none'; });
+        });
+    });
+});
