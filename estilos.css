@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root { --primary: #6c5ce7; --accent: #00cec9; --dark: #0f0f1a; --dark-card: #1a1a2e; --text: #f0f0f5; --text-muted: #b0b0c8; --radius: 20px; --grad: linear-gradient(135deg, #6c5ce7, #00cec9); --glass: rgba(255, 255, 255, 0.05); }
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; list-style: none; text-decoration: none; }
 html { scroll-behavior: smooth; font-size: 16px; } body { background: var(--dark); color: var(--text); overflow-x: hidden; }
@@ -24,3 +25,35 @@ html { scroll-behavior: smooth; font-size: 16px; } body { background: var(--dark
 .form-group input { width: 100%; padding: 18px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: #fff; margin-bottom: 20px; }
 .form-group button { width: 100%; padding: 18px; border-radius: 12px; background: var(--grad); color: #fff; font-weight: 700; border: none; }
 .footer { text-align: center; padding: 50px; color: var(--text-muted); border-top: 1px solid rgba(255,255,255,0.05); }
+=======
+﻿/* system css style 21 */
+/* system css style 22 */
+/* system css style 23 */
+/* system css style 24 */
+/* system css style 25 */
+/* system css style 26 */
+/* system css style 27 */
+/* system css style 28 */
+/* system css style 29 */
+/* system css style 30 */
+/* system css style 31 */
+/* system css style 32 */
+/* system css style 33 */
+/* system css style 34 */
+/* system css style 35 */
+/* system css style 36 */
+/* system css style 37 */
+/* system css style 38 */
+/* system css style 39 */
+/* system css style 40 */
+/* system css style 41 */
+/* system css style 42 */
+/* system css style 43 */
+/* system css style 44 */
+/* system css style 45 */
+/* system css style 46 */
+/* system css style 47 */
+/* system css style 48 */
+/* system css style 49 */
+/* system css style 50 */
+>>>>>>> v1.0.0
