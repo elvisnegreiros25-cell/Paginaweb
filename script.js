@@ -7,3 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
         else { nav.classList.remove('nav-scrolled'); }
     });
     const navLinks = document.querySelectorAll('.menu li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
