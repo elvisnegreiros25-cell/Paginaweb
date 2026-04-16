@@ -25,3 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (category === 'todos') { card.style.display = 'block'; }
                 else {
                     const cardTitle = card.querySelector('h4').textContent.toLowerCase();
+                    if (cardTitle.includes(category.slice(0,-1))) { card.style.display = 'block'; }
