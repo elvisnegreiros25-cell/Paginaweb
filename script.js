@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.scrollY > 50) { nav.classList.add('nav-scrolled'); }
         else { nav.classList.remove('nav-scrolled'); }
     });
+    const navLinks = document.querySelectorAll('.menu li a');
