@@ -53,3 +53,5 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .catalog-filters { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
 .filter-btn { padding: 8px 20px; border-radius: var(--radius-full); background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); }
 .filter-btn.active { background: var(--gradient-accent); color: #fff; }
+.contact-section { padding: 100px 30px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1100px; margin: 0 auto; }
