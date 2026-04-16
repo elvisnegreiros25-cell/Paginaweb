@@ -68,3 +68,4 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 
 .main-nav.nav-scrolled { background: rgba(15, 15, 26, 0.98); padding: 10px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
 .main-nav.nav-scrolled .logo { font-size: 1.35rem; }
+.product-card { transition: opacity 0.4s ease, transform 0.4s ease; }
