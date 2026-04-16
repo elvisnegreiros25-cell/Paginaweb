@@ -48,3 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactBtn) {
         contactBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            const inputs = document.querySelectorAll('.contact-form input');
