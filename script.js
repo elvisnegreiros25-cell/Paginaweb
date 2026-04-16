@@ -37,3 +37,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const productBuyBtns = document.querySelectorAll('.product-info .price');
     productBuyBtns.forEach(btn => {
         btn.style.cursor = 'pointer';
+        btn.addEventListener('click', () => {
+            count++; cartBadge.textContent = count;
