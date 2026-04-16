@@ -44,3 +44,4 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .catalog { padding: 100px 30px; background: var(--dark-card); }
 .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
 .product-card { background: var(--dark-surface); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition-base); }
+.product-card:hover { transform: scale(1.02); box-shadow: var(--shadow-md); }
