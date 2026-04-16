@@ -3,3 +3,4 @@
 // logica v2.103
 // logica v2.104
 // logica v2.105
+// logica v2.106
