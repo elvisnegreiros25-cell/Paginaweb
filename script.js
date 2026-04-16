@@ -1,53 +1,64 @@
-﻿/* --- TECHSALES Logic Core --- */
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('TECHSALES V2.0 Initialized');
+﻿document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.main-nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) { nav.classList.add('nav-scrolled'); }
-        else { nav.classList.remove('nav-scrolled'); }
-    });
-    const navLinks = document.querySelectorAll('.menu li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            if (link.getAttribute('href').startsWith('#')) {
-                console.log('Navigating to section...'); }
-        });
-    });
-    /* --- Hector: Logic Filter --- */
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
+    const cartBadge = document.querySelector('.cart-count');
+    let count = parseInt(cartBadge.textContent);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 80) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+    });
+
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            const category = btn.textContent.toLowerCase();
+            const category = btn.getAttribute('data-category');
+            
             productCards.forEach(card => {
-                if (category === 'todos') { card.style.display = 'block'; }
-                else {
-                    const cardTitle = card.querySelector('h4').textContent.toLowerCase();
-                    if (cardTitle.includes(category.slice(0,-1))) { card.style.display = 'block'; }
-                    else { card.style.display = 'none'; }
-                }
+                card.style.opacity = '0';
+                setTimeout(() => {
+                    if (category === 'todos' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => card.style.opacity = '1', 10);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }, 400);
             });
         });
     });
-    /* --- Yorlin: Cart Logic --- */
-    let count = 3;
-    const cartBadge = document.querySelector('.cart-count');
-    const productBuyBtns = document.querySelectorAll('.product-info .price');
-    productBuyBtns.forEach(btn => {
-        btn.style.cursor = 'pointer';
-        btn.addEventListener('click', () => {
-            count++; cartBadge.textContent = count;
-            cartBadge.style.transform = 'scale(1.2)';
-            setTimeout(() => { cartBadge.style.transform = 'scale(1)'; }, 200);
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+            }
         });
     });
-    /* --- Jordy: Contact Validation --- */
-    const contactBtn = document.querySelector('.contact-form button');
-    if (contactBtn) {
-        contactBtn.addEventListener('click', (e) => {
+
+    document.querySelectorAll('.product-info').forEach(card => {
+        card.addEventListener('click', () => {
+            count++; cartBadge.textContent = count;
+            cartBadge.style.transform = 'scale(1.3)';
+            setTimeout(() => cartBadge.style.transform = 'scale(1)', 200);
+        });
+    });
+
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.querySelector('button').addEventListener('click', (e) => {
             e.preventDefault();
-            const inputs = document.querySelectorAll('.contact-form input');
-            let valid = true; inputs.forEach(i => { if (!i.value) valid = false; });
-            if (valid) { alert('Mensaje enviado con exito. Pronto nos contactaremos.'); }
+            const inputs = contactForm.querySelectorAll('input');
+            if (Array.from(inputs).every(i => i.value)) {
+                alert('Â¡Mensaje enviado! Nos contactaremos pronto.');
+                inputs.forEach(i => i.value = '');
+            } else {
+                alert('Por favor completa todos los campos.');
+            }
+        });
+    }
+});
