@@ -23,3 +23,4 @@
 // logica v2.123
 // logica v2.124
 // logica v2.125
+// logica v2.126
