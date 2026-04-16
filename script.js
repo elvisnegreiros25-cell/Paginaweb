@@ -9,3 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.menu li a');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+            if (link.getAttribute('href').startsWith('#')) {
+                console.log('Navigating to section...'); }
+        });
+    });
