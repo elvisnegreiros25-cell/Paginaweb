@@ -40,3 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             count++; cartBadge.textContent = count;
             cartBadge.style.transform = 'scale(1.2)';
+            setTimeout(() => { cartBadge.style.transform = 'scale(1)'; }, 200);
+        });
+    });
