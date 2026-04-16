@@ -23,3 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = btn.textContent.toLowerCase();
             productCards.forEach(card => {
                 if (category === 'todos') { card.style.display = 'block'; }
+                else {
+                    const cardTitle = card.querySelector('h4').textContent.toLowerCase();
