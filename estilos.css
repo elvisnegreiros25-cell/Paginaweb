@@ -50,3 +50,4 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .product-info { padding: 20px; }
 .product-info h4 { font-size: 1.1rem; margin-bottom: 8px; }
 .product-info .price { color: var(--accent); font-weight: 800; font-size: 1.25rem; }
+.catalog-filters { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
