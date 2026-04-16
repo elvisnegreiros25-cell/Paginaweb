@@ -52,3 +52,4 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .product-info .price { color: var(--accent); font-weight: 800; font-size: 1.25rem; }
 .catalog-filters { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
 .filter-btn { padding: 8px 20px; border-radius: var(--radius-full); background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); }
+.filter-btn.active { background: var(--gradient-accent); color: #fff; }
