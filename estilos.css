@@ -28,3 +28,4 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .cart-count { position: absolute; top: -8px; right: -10px; background: var(--accent); color: #fff; font-size: 0.65rem; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .hero-section { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--gradient-hero); position: relative; padding-top: 80px; }
 .tagline { background: rgba(108, 92, 231, 0.15); color: var(--primary-light); padding: 8px 20px; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 24px; display: inline-block; }
+.hero-content { max-width: 750px; text-align: center; z-index: 2; }
