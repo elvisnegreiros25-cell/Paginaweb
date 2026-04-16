@@ -65,3 +65,5 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .btn-secondary { padding: 14px 36px; border: 2px solid var(--primary); border-radius: var(--radius-full); margin-left: 15px; transition: var(--transition-base); }
 .btn-secondary:hover { background: var(--primary); color: #fff; }
 /* --- Sincronizacion Final V2 Terminada --- */
+
+.main-nav.nav-scrolled { background: rgba(15, 15, 26, 0.98); padding: 10px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
