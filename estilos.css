@@ -41,3 +41,5 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .feature-card:hover { transform: translateY(-10px); border-color: var(--primary); }
 .hero-section::before { content: ''; position: absolute; top: -50%; width: 700px; height: 700px; background: radial-gradient(circle, rgba(108, 92, 231, 0.1) 0%, transparent 70%); animation: floatHero 8s infinite; }
 @keyframes floatHero { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+.catalog { padding: 100px 30px; background: var(--dark-card); }
+.catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
