@@ -5,3 +5,4 @@
     --text-secondary: #b0b0c8; --text-muted: #6c6c8a;
     --gradient-hero: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 40%, #16213e 100%);
     --gradient-accent: linear-gradient(135deg, #6c5ce7, #00cec9);
+    --gradient-card: linear-gradient(145deg, #1a1a2e, #16213e);
