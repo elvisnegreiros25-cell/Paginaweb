@@ -45,3 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     /* --- Jordy: Contact Validation --- */
     const contactBtn = document.querySelector('.contact-form button');
+    if (contactBtn) {
+        contactBtn.addEventListener('click', (e) => {
+            e.preventDefault();
