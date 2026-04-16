@@ -43,3 +43,5 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => { cartBadge.style.transform = 'scale(1)'; }, 200);
         });
     });
+    /* --- Jordy: Contact Validation --- */
+    const contactBtn = document.querySelector('.contact-form button');
