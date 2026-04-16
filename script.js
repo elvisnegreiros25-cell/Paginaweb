@@ -26,3 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 else {
                     const cardTitle = card.querySelector('h4').textContent.toLowerCase();
                     if (cardTitle.includes(category.slice(0,-1))) { card.style.display = 'block'; }
+                    else { card.style.display = 'none'; }
+                }
+            });
+        });
+    });
