@@ -33,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     /* --- Yorlin: Cart Logic --- */
     let count = 3;
+    const cartBadge = document.querySelector('.cart-count');
