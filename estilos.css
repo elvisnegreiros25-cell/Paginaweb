@@ -55,3 +55,4 @@ h1, h2, h3 { line-height: 1.2; font-weight: 800; }
 .filter-btn.active { background: var(--gradient-accent); color: #fff; }
 .contact-section { padding: 100px 30px; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1100px; margin: 0 auto; }
+.contact-form input { width: 100%; padding: 15px; background: var(--dark-surface); border: 1px solid rgba(255, 255, 255, 0.1); color: #fff; margin-bottom: 15px; border-radius: 8px; }
