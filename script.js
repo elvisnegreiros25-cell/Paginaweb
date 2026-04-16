@@ -35,3 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
     let count = 3;
     const cartBadge = document.querySelector('.cart-count');
     const productBuyBtns = document.querySelectorAll('.product-info .price');
+    productBuyBtns.forEach(btn => {
+        btn.style.cursor = 'pointer';
