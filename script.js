@@ -50,3 +50,4 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const inputs = document.querySelectorAll('.contact-form input');
             let valid = true; inputs.forEach(i => { if (!i.value) valid = false; });
+            if (valid) { alert('Mensaje enviado con exito. Pronto nos contactaremos.'); }
