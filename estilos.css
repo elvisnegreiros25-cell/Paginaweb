@@ -3,3 +3,4 @@
     --accent: #00cec9; --accent-dark: #00b5b1; --dark: #0f0f1a;
     --dark-card: #1a1a2e; --dark-surface: #16213e; --text-primary: #f0f0f5;
     --text-secondary: #b0b0c8; --text-muted: #6c6c8a;
+    --gradient-hero: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 40%, #16213e 100%);
