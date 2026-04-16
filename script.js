@@ -16,3 +16,5 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- Hector: Logic Filter --- */
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
