@@ -31,3 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+    /* --- Yorlin: Cart Logic --- */
+    let count = 3;
