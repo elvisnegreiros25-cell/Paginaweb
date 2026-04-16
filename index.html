@@ -1,218 +1,34 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise Sales | Gestión y Comercio</title>
-    <meta name="description" content="Plataforma profesional de ventas y gestión de inventario.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
- <section id="registro-clientes" class="registration-section">
-        <div class="section-title">
-            <h2>Registro de Nuevos Clientes</h2>
-            <p>Completa los datos para dar de alta a un cliente en el sistema</p>
-            <div class="underline"></div>
-        </div>
 
-        <div class="form-container-client">
-            <form id="client-form" class="client-form">
-                <div class="form-group-row">
-                    <div class="input-box">
-                        <label for="doc-identidad">DNI / RUC</label>
-                        <input type="text" id="doc-identidad" name="doc-identidad" placeholder="Ej. 70654321" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="cliente-nombre">Nombre o Razón Social</label>
-                        <input type="text" id="cliente-nombre" name="cliente-nombre" placeholder="Nombre completo" required>
-                    </div>
-                </div>
+<html lang='es'>
+    <meta charset='UTF-8'>    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>TECHSALES | Hardware Premium</title>    <link rel='stylesheet' href='estilos.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+</head><body><nav class='main-nav'>
+    <div class='nav-container'>
+        <a href='#' class='logo'><i class='fas fa-microchip'></i><span>TECH</span>SALES</a>        <ul class='menu'>
+            <li><a href='#inicio'>Inicio</a></li><li><a href='#servicios'>Servicios</a></li><li><a href='#catalogo'>Catalogo</a></li>            <li><a href='#' class='btn-contact'>Contacto</a></li>
+        </ul>
+        <div class='nav-icons'><a href='#'><i class='fas fa-search'></i></a>            <a href='#' style='position:relative;'><i class='fas fa-shopping-cart'></i><span class='cart-count'>3</span></a>
+        </div>
+    </div>
+</nav><header class='hero-section' id='inicio'>
+    <div class='hero-content'>
+        <span class='tagline'>Innovacion en tus manos</span>        <h1>Potencia tu setup con tecnologia de elite</h1>
+        <p>Los mejores componentes para overclocking y gaming profesional en un solo lugar.</p>        <div class='hero-btns'><a href='#' class='btn-primary'>Ver Catalogo</a><a href='#' class='btn-secondary'>Ofertas</a></div>
+    </div>
+</header><section class='stats-bar'>
+    <div class='stat-item'><h3>500+</h3><p>Productos</p></div>    <div class='stat-item'><h3>15k</h3><p>Clientes</p></div><div class='stat-item'><h3>24/7</h3><p>Soporte</p></div>
+</section><section class='features' id='servicios'>
+    <div class='section-title'><h2>Nuestros Servicios</h2><div class='underline'></div></div>
+    <div class='features-grid'>        <div class='feature-card'><i class='fas fa-truck-fast'></i><h3>Envio Express</h3><p>Entregas en menos de 24 horas.</p></div>        <div class='feature-card'><i class='fas fa-shield-halved'></i><h3>Garantia Total</h3><p>Cobertura completa por 2 anos.</p></div>
+    </div>
+</section>
+<section class='catalog' id='catalogo'><div class='section-title'><h2>Catalogo Premium</h2><div class='underline'></div></div><div class='catalog-filters'><button class='filter-btn active' data-category='todos'>Todos</button><button class='filter-btn' data-category='gpus'>GPUs</button><button class='filter-btn' data-category='cpus'>CPUs</button></div><div class='catalog-grid'><div class='product-card' data-category='gpus'><div class='product-img'><img src='https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=400' alt='GPU'></div><div class='product-info'><h4>RTX 4090 OC Edition</h4><span class='price'>,599</span></div></div><div class='product-card' data-category='cpus'><div class='product-img'><img src='https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=400' alt='CPU'></div><div class='product-info'><h4>Core i9-13900K</h4><span class='price'></span></div></div></div></section><section class='contact-section' id='contacto'><div class='contact-grid'><div class='contact-info'><h2>Ã‚Â¿Tienes preguntas?</h2><p>Nuestro equipo de expertos te asesorara.</p><div class='contact-form'><input type='text' placeholder='Tu Nombre'><input type='email' placeholder='Email'><button>Enviar Mensaje</button></div></div></section><footer class='footer'><div class='footer-grid'><div><h3>TechSales</h3><p>Lideres en hardware de alto rendimiento.</p></div><div><h3>Enlaces</h3><ul><li>Inicio</li><li>Catalogo</li><li>Soporte</li></ul></div></div><div class='footer-bottom'><p>&copy; 2026 TECHSALES Pro Project. Todos los derechos reservados.</p></div></footer>    <script src='script.js'></script>
+</body></html>
 
-                <div class="form-group-row">
-                    <div class="input-box">
-                        <label for="cliente-tel">Teléfono / WhatsApp</label>
-                        <input type="tel" id="cliente-tel" name="cliente-tel" placeholder="+51 900 000 000">
-                    </div>
-                    <div class="input-box">
-                        <label for="cliente-email">Correo Electrónico</label>
-                        <input type="email" id="cliente-email" name="cliente-email" placeholder="cliente@correo.com" required>
-                    </div>
-                </div>
 
-                <div class="input-box full-width">
-                    <label for="cliente-dir">Dirección Fiscal / Entrega</label>
-                    <input type="text" id="cliente-dir" name="cliente-dir" placeholder="Av. Larco 123, Trujillo">
-                </div>
 
-                <div class="form-actions">
-                    <button type="submit" class="btn-primary">Registrar Cliente</button>
-                    <button type="reset" class="btn-secondary">Limpiar</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-microchip"></i> <span>TECNOLOGIA</span>
-            </div>
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios </a></li>
-                <li><a href="#productos">Catálogo</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto" class="btn-contact">Contáctanos</a></li>
-            </ul>
-            <div class="nav-icons">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#" class="cart-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">0</span>
-                </a>
-            </div>
-        </div>
-    </nav>
 
-    <header id="inicio" class="hero-section">
-        <div class="hero-content">
-            <span class="tagline">Tecnología en tus manos</span>
-            <h1>Potencia tu negocio con nuestra plataforma de ventas</h1>
-            <p>Sincronización en tiempo real, gestión de inventarios y facturación electrónica en un solo lugar.</p>
-            <div class="hero-btns">
-                <a href="#productos" class="btn-primary">Ver Catálogo</a>
-                <a href="#servicios" class="btn-secondary">Saber más</a>
-            </div>
-        </div>
-    </header>
 
-    <section class="stats-bar">
-        <div class="stat-item">
-            <h3>+10k</h3>
-            <p>Ventas Realizadas</p>
-        </div>
-        <div class="stat-item">
-            <h3>99.9%</h3>
-            <p>Uptime de Servidor</p>
-        </div>
-        <div class="stat-item">
-            <h3>24/7</h3>
-            <p>Soporte Técnico</p>
-        </div>
-        <div class="stat-item">
-            <h3>150+</h3>
-            <p>Marcas Aliadas</p> 
-        </div>
-    </section>
 
-    <section id="servicios" class="features">
-        <div class="section-title">
-            <h2>Nuestras Soluciones</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-box-open"></i>
-                <h3>Gestión de Stock</h3>
-                <p>Control total de entradas y salidas de mercancía con alertas de bajo inventario.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Reportes Avanzados</h3>
-                <p>Analítica detallada de ventas diarias, mensuales y rendimiento por vendedor.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Seguridad Total</h3>
-                <p>Cifrado de datos de extremo a extremo para proteger tus transacciones.</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="productos" class="catalog">
-        <div class="section-title">
-            <h2>Catálogo Destacado</h2>
-            <p>Explora nuestras últimas novedades tecnológicas</p>
-        </div>
-        
-        <div class="product-filters">
-            <button class="filter-btn active">Todos</button>
-            <button class="filter-btn">Hardware</button>
-            <button class="filter-btn">Software</button>
-            <button class="filter-btn">Accesorios</button>
-        </div>
-
-        <div class="products-container">
-            <article class="product-item">
-                <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=500&q=60" alt="Laptop">
-                    <div class="overlay">
-                        <button class="add-to-cart">Añadir</button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <span class="category">Hardware</span>
-                    <h3>Laptop Pro Max 2026</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="price">S/ 4,500.00</p>
-                </div>
-            </article>
-            </div>
-    </section>
-
-    <section id="contacto" class="contact-section">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>¿Listo para empezar?</h2>
-                <p>Déjanos tus datos y un asesor se pondrá en contacto contigo.</p>
-                <ul class="contact-details">
-                    <li><i class="fas fa-envelope"></i> ventas@empresa.com</li>
-                    <li><i class="fas fa-phone"></i> +51 987 654 321</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Trujillo, Perú</li>
-                </ul>
-            </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Nombre completo" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="¿En qué podemos ayudarte?" rows="5"></textarea>
-                <button type="submit" class="btn-submit">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-about">
-                <h3>TECH<span>SALES</span></h3>
-                <p>Líderes en soluciones tecnológicas para la gestión empresarial.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h4>Enlaces Rápidos</h4>
-                <ul>
-                    <li><a href="#">Privacidad</a></li>
-                    <li><a href="#">Términos</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-        </div>
-    </footer>
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> 4d09a26 (guardado del codigo)
->>>>>>> origin/master
-</body>
-</html>
